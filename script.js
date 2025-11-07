@@ -1,4 +1,4 @@
-//Task 1
+//Task 1 and 2
 
 let shoppingList = [];
 
@@ -10,7 +10,6 @@ else {
 }
 }
 
-
 function removeLastItem () {
 shoppingList.pop();
 }
@@ -18,3 +17,13 @@ shoppingList.pop();
 function displayList() {
     console.log(shoppingList);
 }
+
+function filterItems (searchTerm) {
+return shoppingList.filter(item => { 
+item.toLowerCase().includes(searchTerm.toLowerCase)
+});
+
+}
+
+
+
